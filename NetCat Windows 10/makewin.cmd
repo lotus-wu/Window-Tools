@@ -13,12 +13,12 @@
 @REM	Tested with gcc 4.5.0 and MinGW version 3.1.8(?)
 @REM	Added more compiler options and strip usage
 SET PROGRAM=nc.exe
-SET COMPILER=c:\MinGW\bin\gcc.exe
-SET STRIP=c:\MinGW\bin\strip.exe
-SET LIB_DIR=c:\MinGW\lib
+SET COMPILER=C:\TDM-GCC-64\bin\gcc.exe
+SET STRIP=C:\TDM-GCC-64\bin\strip.exe
+SET LIB_DIR=C:\TDM-GCC-64\lib
 
 @REM	not needed? SET CFLAdGS=-c -DWIN32 -DNDEBUG -D_CONSOLE -DTELNET -DGAPING_SECURITY_HOLE
-SET XFLAGS=-O3 -march=i686
+SET XFLAGS=-O3 -march=x86-64
 SET CFLAGS=-c %XFLAGS% -DWIN32 -DNDEBUG -D_CONSOLE -DTELNET -DGAPING_SECURITY_HOLE
 SET LFLAGS=%XFLAGS%
 
